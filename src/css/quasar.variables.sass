@@ -1,0 +1,80 @@
+// Quasar Sass (& SCSS) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+
+$primary    : #EC268F
+$secondary  : #37b6f9 // #9c27b0  //#2979ff //#009688
+$accent     : #ffff00 // #37b6f9 //#ff1bd9// #555
+
+$neutral    : #E0E1E2
+$positive   : #21BA45
+$negative   : #DB2828
+$info       : #31CCEC
+$warning    : #F2C037
+$dark       : #454343
+
+$customcolor     : #009688
+
+
+#bgImage
+  background: url("~assets/images/background.png") 50% 50% / cover no-repeat
+  overflow: auto
+  padding: 2.1rem 0 2.8rem
+  min-height: calc(100vh - 51px)
+
+.my-sticky-dynamic
+  /* height or max-height is important */
+  height: calc(100vh - 62px)
+
+  .q-table__top,
+  .q-table__bottom
+    background-color: #3E444E
+    color: white
+    border-radius: 0px !important;
+
+  thead tr:first-child th /* bg color is important for th; just specify one */
+    background-color: #272B33
+    color: white
+
+  thead tr th
+    position: sticky
+    z-index: 1
+  /* this will be the loading indicator */
+  thead tr:last-child th
+    /* height of all previous header rows */
+    top: 48px
+  thead tr:first-child th
+    top: 0
+.q-field--standard .q-field__control:before, .q-field--standard .q-field__control:hover:before
+  border-color: white
+
+.table-top-android
+  height: calc(100vh - 120px) !important
+  .q-table__top
+    height: 104px !important
+    padding: 0px 16px
+
+.table-top-ios
+  height: calc(100vh - 170px) !important
+  .q-table__top
+    height: 104px !important
+    padding: 0px 16px
+
+.q-field__bottom
+  padding: 2px 12px 0;
+
+.q-select-list
+  .q-field__native
+    color: white !important
+  .q-select__dropdown-icon
+    color: white !important
